@@ -42,9 +42,14 @@ align-items: center;
   gap:40px;
 }
 
-.influencer-nav ul li{
+.influencer-nav ul li {
     list-style: none;
 }
+
+.fa-cart-shopping{
+font-size: 30px;
+}
+
 
 .influencer-nav ul li a{
   color:var( --primary-color );
@@ -106,6 +111,7 @@ padding:0px 120px 80px;
    background-repeat: no-repeat;
    background-position:center center;
    background-size: contain;
+   padding:25px;
 }
 
 .infu-hero-img-wrap img{
@@ -117,37 +123,50 @@ padding:0px 120px 80px;
 
 
 .our-partner-sec{
-padding:80px 120px;
+padding:50px 120px;
 }
 
 .our-partner-container{
-    padding:36px 0px;
+    padding:46px 0px;
     display: flex;
     flex-direction:row;
     justify-content: center;
     align-items: center;
     gap: 60px;
-    border-top:1px solid var(--secondary-color);
-    border-bottom:1px solid var(--secondary-color);
+    border-image: linear-gradient(to left, #717171 0%, #dcdcdc 100%) 1;
+    border-top:1px solid transparent ;
+    border-bottom:1px solid transparent ;
 
 }
-
-
 
 
 /* //////////////////////////////////////// */
 
 .collection-sec{
-    padding:80px 120px;
+    padding:60px 120px;
 }
 
 .collection-card-container{
     display:grid;
     grid-template-columns: repeat(3,1fr);
-    justify-items: center;
+    /* justify-content: center; */
     align-items: center;
-    gap:30px;
+    gap:40px;
 }
+
+
+.collection-title{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.collection-title h2{
+    color: var(--primary-color);
+    font-size: var(--font-size);
+    font-family: "poppins";
+    font-weight: 600;
+}
+
 
 .collection-card{
     display: flex;
@@ -157,7 +176,7 @@ padding:80px 120px;
     gap:16px;
     text-align: left;
     padding:14px 14px 24px;
-    box-shadow: 0px 0px 20px 7px #e4e4e4;
+    box-shadow: 0px 0px 20px 16px #ece6e6;
     border-radius: 5px;
 }
 
@@ -174,9 +193,10 @@ padding:80px 120px;
 }
 
 .collection-card h5{
-    color:var(--primary-color);
+    color:var(--secondary-color);
     font-size: var(--font-Size);
     font-family: "inter", sans-serif;
+    font-weight: 700;
 }
 
 .ratting{
@@ -224,18 +244,21 @@ padding:80px 120px;
     display: flex;
     justify-content:space-evenly;
     align-items: center;
-    gap: 40px;
+    gap:60px;
 
 
 }
 
 .f-product-image{
-width:calc(50% - 20px)
+width:calc(50% - 30px)
 }
 
-.f-product-text{
-    width:calc(50% - 20px);
+.f-product-image img{
+    width:100%;
+    }
 
+.f-product-text{
+    width:calc(50% - 30px);
 }
 
 .f-product-text h2{
