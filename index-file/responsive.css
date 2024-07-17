@@ -58,11 +58,12 @@
     /*////////////////    */
 
          .collection-sec{
-                padding:50px 60px;
+                padding:50px 40px;
             }
             
          .collection-card-container{
                 grid-template-columns: 1fr;
+                justify-items: center;
                 gap:40px;
             }
             
